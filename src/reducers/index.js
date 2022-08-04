@@ -31,7 +31,7 @@ const intialState = {
     {
       id: 4,
       name: "Laxman Nadimetla",
-      email: "laxman.ladimetla@consultant.bedbath.com",
+      email: "laxman.nadimetla@consultant.bedbath.com",
       phone: "7304632777",
     },
     {
@@ -68,7 +68,7 @@ export const contactReducer = (state = intialState, action) => {
       return {
         ...state,
         contacts: state.contacts.map((contact) =>
-          contact.id == action.payload.id ? action.payload : contact
+          contact.id === action.payload.id ? action.payload : contact
         ),
       };
     case DELETE_CONTACT:
