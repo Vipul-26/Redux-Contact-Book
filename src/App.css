@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.cont-padding {
+  padding-top: 5rem !important;
+}
+
+.text-left {
+  text-align: left;
+  padding-left: 3rem !important;
+}
+
+.card-width {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1023px) {
+  .card-width {
+    width: 80%;
+  }  
+
+  .text-left {
+    text-align: center;
+    padding-left: 1rem !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .card-width {
+    width: 90%;
+  }  
+
+  .text-left {
+    padding-left: 0.5rem !important;
+  }
+
+  .container {
+    overflow-x: auto !important;
+  }
+}
