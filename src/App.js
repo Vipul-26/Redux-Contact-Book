@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AddContact from "./components/AddContact";
 import EditContact from "./components/EditContact";
 
-function App() {
+const App = () => {
   return (
     <Provider store={store}>
       <Router>
@@ -31,6 +31,6 @@ function App() {
       </Router>
     </Provider>
   );
-}
+};
 
 export default App;
